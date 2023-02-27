@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <section class="page">
+    <header class="header">
+      <div class="header__nav">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link" href="index.html">ГЛАВНАЯ</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link menu__subnav" href="#">СТАТЬИ</a> 
+              <ul class="subnav">
+                <li class="subnav__item"><a class="subnav__link" href="articles_травмы.html">Кризисы и травмы</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_страхи.html">Страхи и тревоги</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_отношения.html">Гармоничные отношения</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_успех.html">Успех и самореализация</a></li>
+              </ul>
+            </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="about-me.html">ОБО МНЕ</a> </li>
+          </ul>
+        </nav>
+
+        <button class="burger burger__active" type="button">
+          <span class="burger__line"></span>
+        </button>
+
+      </div>
+      <div class="header__search">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item menu__list-item--active"> <a class="menu__list-link" href="profile.html">ПРОФИЛЬ</a> </li>
+          </ul>
+        </nav>
+        <form class="header__form" action="search.html" method="post">
+          <input class="header__form-input" type="text" placeholder="Поиск по блогу">
+        </form>
+      </div>
+
+    </header>
+<!--Sidebar-->    
+    <aside class="sidebar show-sidebar">
+      <div class="sidebar__content">
+
+        <div class="sidebar__profile">
+          <img class="sidebar__profile-ava" src="images/avatar_sidebar.jpg" alt="avatar">
+         <div class="sidebar__descr">
+           <div class="sidebar__profile-name">Артём Папян</div>
+           <div class="sidebar__profile-job">психолог, коуч</div>
+         </div>
+        </div>
+
+        <div class="sidebar__socials">
+          <a class="sidebar__socials-link"  href="https://t.me/reach_your_goals" target="_blank">
+            <img class="sidebar__socials-icon" src="images/telegram.svg" alt="telegram icon">
+          </a>
+          <a class="sidebar__socials-link"  href="https://www.instagram.com/papyan.art/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+            <img class="sidebar__socials-icon" src="images/instagram.svg" alt="instagram icon">
+          </a>
+          <a class="sidebar__socials-link"  href="https://www.youtube.com/@user-gr4xr9mw5s" target="_blank">
+            <img class="sidebar__socials-icon" src="images/youtube.svg" alt="youtube icon">
+          </a>
+        </div>
+
+        <nav class="menu mobile-nav">
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link" href="index.html">ГЛАВНАЯ</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link menu__subnav" href="#">СТАТЬИ</a> 
+              <ul class="subnav">
+                <li class="subnav__item"><a class="subnav__link" href="articles_травмы.html">Кризисы и травмы</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_страхи.html">Страхи и тревоги</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_отношения.html">Гармоничные отношения</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_успех.html">Успех и самореализация</a></li>
+              </ul>
+            </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="about-me.html">ОБО МНЕ</a> </li>
+            <li class="menu__list-item menu__list-item--active"> <a class="menu__list-link" href="#">ПРОФИЛЬ</a> </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar__footer">
+          <p class="sidebar__footer-text">Меня зовут Артём Папян. Я профессиональный психолог, коуч. Помогаю людям достичь гармонии и баланса во всех сферах жизни, учу правильно планировать, ставить цели, чтобы их достигать.</p>
+        </div>
+      </div>
+
+    </aside>
+
+
+<!--Main-->    
+    <main class="main">
+      <div class="container">
+        <div class="profile">
+          <h1 class="title profile__title">Профиль</h1>
+          
+            <form class="profile__form" action="/" method="post">
+              <div class="profile__items">
+
+                <div class="profile__inf">
+                  <div class="form__group">
+                    <input class="form__control" type="text" placeholder="Ваше имя" value="Артём Папян">
+                    <span class="form__line"></span>
+                  </div>
+        
+                  <div class="form__group">
+                    <input class="form__control" type="email" placeholder="Ваш e-mail" value="artiom.papean@mail.ru">
+                    <span class="form__line"></span>
+                  </div>
+        
+                  <div class="form__group">
+                    <input class="form__control" type="password" placeholder="Новый пароль">
+                    <span class="form__line"></span>
+                  </div>
+        
+                  <div class="form__group">
+                    <input class="form__control" type="password" placeholder="Повторите пароль">
+                    <span class="form__line"></span>
+                  </div>
+                </div>
+                <div class="profile__avatar">
+                  <img class="profile__avatar-img" src="images/avatar_sidebar.jpg" alt="avatar">
+                  <label class="profile__avatar-file">
+                    <input type="file"> выбрать аватар
+                  </label>
+                </div>
+              </div>
+
+              <button class="form__btn" type="submit">Сохранить</button>
+            </form>
+
+        </div>
+
+      </div>
+    </main>
+  </section>
+    
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

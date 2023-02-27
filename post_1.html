@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <section class="page">
+    <header class="header">
+      <div class="header__nav">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link" href="index.html">ГЛАВНАЯ</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link menu__subnav" href="#">СТАТЬИ</a> 
+              <ul class="subnav">
+                <li class="subnav__item"><a class="subnav__link" href="articles_травмы.html">Кризисы и травмы</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_страхи.html">Страхи и тревоги</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_отношения.html">Гармоничные отношения</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_успех.html">Успех и самореализация</a></li>
+              </ul>
+            </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="about-me.html">ОБО МНЕ</a> </li>
+          </ul>
+        </nav>
+
+        <button class="burger burger__active" type="button">
+          <span class="burger__line"></span>
+        </button>
+
+      </div>
+
+      <div class="header__search">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link" href="profile.html">ПРОФИЛЬ</a> </li>
+          </ul>
+        </nav>
+        <form class="header__form" action="search.html" method="post">
+          <input class="header__form-input" type="text" placeholder="Поиск по блогу">
+        </form>
+      </div>
+
+    </header>
+<!--Sidebar-->    
+    <aside class="sidebar show-sidebar">
+      <div class="sidebar__content">
+
+        <div class="sidebar__profile">
+          <img class="sidebar__profile-ava" src="images/avatar_sidebar.jpg" alt="avatar">
+         <div class="sidebar__descr">
+           <div class="sidebar__profile-name">Артём Папян</div>
+           <div class="sidebar__profile-job">психолог, коуч</div>
+         </div>
+        </div>
+
+        <div class="sidebar__socials">
+          <a class="sidebar__socials-link"  href="https://t.me/reach_your_goals" target="_blank">
+            <img class="sidebar__socials-icon" src="images/telegram.svg" alt="telegram icon">
+          </a>
+          <a class="sidebar__socials-link"  href="https://www.instagram.com/papyan.art/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+            <img class="sidebar__socials-icon" src="images/instagram.svg" alt="instagram icon">
+          </a>
+          <a class="sidebar__socials-link"  href="https://www.youtube.com/@user-gr4xr9mw5s" target="_blank">
+            <img class="sidebar__socials-icon" src="images/youtube.svg" alt="youtube icon">
+          </a>
+        </div>
+
+        <nav class="menu mobile-nav">
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link" href="index.html">ГЛАВНАЯ</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link menu__subnav" href="#">СТАТЬИ</a> 
+              <ul class="subnav">
+                <li class="subnav__item"><a class="subnav__link" href="articles_травмы.html">Кризисы и травмы</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_страхи.html">Страхи и тревоги</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_отношения.html">Гармоничные отношения</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_успех.html">Успех и самореализация</a></li>
+              </ul>
+            </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="about-me.html">ОБО МНЕ</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="profile.html">ПРОФИЛЬ</a> </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar__footer">
+          <p class="sidebar__footer-text">Меня зовут Артём Папян. Я профессиональный психолог, коуч. Помогаю людям достичь гармонии и баланса во всех сферах жизни, учу правильно планировать, ставить цели, чтобы их достигать.</p>
+            <button class="sidebar__footer-btn" type="button">Написать мне</button>
+        </div>
+      </div>
+
+    </aside>
+
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close" type="button">
+          <svg class="modal__icon" width="17" height="17" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.1047 10.0008L19.7709 1.33447C20.0761 1.02935 20.0761 0.534663 19.7709 0.229585C19.4658 -0.0754924 18.9711 -0.0755315 18.6661 0.229585L9.99975 8.8959L1.33347 0.229585C1.02836 -0.0755315 0.533671 -0.0755315 0.228593 0.229585C-0.0764842 0.534702 -0.0765233 1.02939 0.228593 1.33447L8.89487 10.0007L0.228593 18.667C-0.0765233 18.9722 -0.0765233 19.4669 0.228593 19.7719C0.381132 19.9245 0.581093 20.0007 0.781053 20.0007C0.981014 20.0007 1.18094 19.9245 1.33351 19.7719L9.99975 11.1057L18.666 19.7719C18.8186 19.9245 19.0185 20.0007 19.2185 20.0007C19.4184 20.0007 19.6184 19.9245 19.7709 19.7719C20.0761 19.4668 20.0761 18.9721 19.7709 18.667L11.1047 10.0008Z" fill="white"/>
+          </svg>      
+        </button>
+        <form class="profile__form" action="/" method="post">
+    
+          <div class="profile__inf entrance__inf">
+    
+            <div class="form__group">
+              <input class="form__control" type="text" placeholder="Ваше имя" value="Игорь Иванов">
+            </div>
+    
+            <div class="form__group">
+              <input class="form__control" type="email" placeholder="Ваш e-mail">
+            </div>
+    
+            <div class="form__group">
+              <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст сообщения"></textarea>
+            </div>
+    
+          </div>
+    
+        <button class="form__btn entrance__btn" type="submit">Отправить</button>
+    
+      </form>
+      <div class="modal__footer">
+        <ul class="modal__list">
+          <li class="modal__item">e-mail:
+            <a class="modal__link" href="mailto:artiom.papean@mail.ru">artiom.papean@mail.ru</a>
+          </li>
+          <li class="modal__item">тел.:
+            <a class="modal__link" href="tel:+799955533321">+7(999)555-333-21</a>
+          </li>
+        </ul>
+      </div>
+    
+      </div>
+    </div>
+
+<!--Main-->    
+    <main class="main">
+      <div class="container">
+<!--Article-->   
+<article class="articles post">
+
+  <div class="articles__actions post__actions">
+    <a class="link post__actions-link" href="articles_травмы.html">вернуться назад</a>
+  </div>
+  
+  <div class="articles__header post__header">
+    <h1 class="articles__title post__title">Нестабильная самооценка</h1>
+    <ul class="articles__data post__data">
+      <li class="articles__data-item post__data-item">
+        <time class="date post__data-time" datetime="2022-10-13">13.10.2022</time>
+      </li>
+      <li class="articles__data-item post__data-item">
+        <a class="articles__data-search post__data-search" href="search.html">кризисы и травмы</a>
+      </li>
+    </ul>
+  </div>
+  <div class="articles__content post__content">
+    <div class="text post__text">
+      <p>
+        <img class="articles__img post__img" src="images/post_1.jpg" alt="image">
+      </p>
+      <p>При нестабильной самооценке "отношение человека к себе зависит от внешних событий, которые происходят в его жизни". Все, что происходит, он пропускает через своё "Я". Небольшая проблема или конфликт могут вызвать серьезные переживания и апатию. А незначительное позитивное событие наоборот.</p>
+      <p>Формирование нестабильной самооценки происходит ещё с детства. С самого детства ребёнок подвергается оценки, как правило, со стороны родителей. И чаще всего, при оценивании, они не разделяют "личность" ребенка и его "поступок".</p>
+      <p>Например, вместо конструктивного: «Ты испачкал одежду. Будь внимательнее в следующий раз, пожалуйста» ребенок слышит: «Ты – грязнуля!». И на фоне обиды, у него может выработаться установка. Ему будет казаться, что он грязный, даже когда это не так. Подсознательная попытка получить одобрение родителей. </p>
+      <p>Таким образом, в течении жизни формируется целый список условий признания своей ценности. "Я - хороший/любимый, если"... "Я - плохой, если"...</p>
+      <p>Человек с нестабильной самооценкой всю жизнь катается на психологических горках.  Множество переживаний, не имеющих ничего общего с реальным положением дел, управляют его отношением к самому себе, к своей личности.  Кто-то покритиковал – самооценка ушла в. Похвалили – перешла в.</p>
+    </div>
+
+    <div class="post__related">
+      <h3 class="post__related-title">Интересно почитать:</h3>
+      <ul class="post__related-list">
+        <li class="post__related-list-item">
+          <h4 class="post__related-list-title"> <a class="post__related-list-link" href="post_7.html">Как прожить 10 жизней за 1</a> </h4>
+          <time class="date post__related-list-date" datetime="2022-10-29">20.10.2022</time>
+        </li>
+        <li class="post__related-list-item">
+          <h4 class="post__related-list-title"> <a class="post__related-list-link" href="post_2.html">Как перестать волноваться о том, что подумают о вас другие?</a> </h4>
+          <time class="date post__related-list-date" datetime="2022-11-10">07.10.2022</time>
+        </li>
+        <li class="post__related-list-item">
+          <h4 class="post__related-list-title"> <a class="post__related-list-link" href="post_3.html">Что такое страхи и какое воздействие они оказывают на человека</a> </h4>
+          <time class="date articles__related-list-date" datetime="2022-11-20">20.11.2022</time>
+        </li>
+      </ul>
+    </div>
+
+    <div class="post__comments">
+      <h3 class="post__comments-title">Обсуждение</h3>
+      <form class="form post__comments-form" action="/" method="post">
+        <div class="form__group post__comments-group">
+          <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария" data-autoresize></textarea>
+        </div>
+        <button class="form__btn" type="submit">Отправить</button>
+      </form>
+
+      <ul class="post__comments-list">
+        <li class="post__comments-item">
+          <div class="post__comments-header">
+            <img class="post__comments-avatar" src="images/ava_comments.jpg" alt="avatar">
+            
+            <div class="post__comments-author">
+              <div class="post__comments-name">Анна Петрова</div>
+              <time class="post__comments-date" datetime="2022-11-23 20:05">1 неделю назад</time>
+            </div>
+
+          </div>
+
+          <div class="post__comments-descr">Прекрасный пост. Всегда интересно Вас читать.</div>
+            <button class="post__comments-reply">ответить</button>
+
+            <ul class="post__comments-list">
+              <li class="post__comments-item">
+                <div class="post__comments-header">
+                  <img class="post__comments-avatar" src="images/avatar_sidebar.jpg" alt="avatar">
+                  
+                  <div class="post__comments-author">
+                    <div class="post__comments-name">Артём Папян</div>
+                    <time class="post__comments-date" datetime="2022-11-23 20:30">1 неделю назад</time>
+                  </div>
+      
+                </div>
+      
+                <div class="post__comments-descr">Спасибо!</div>
+                  <button class="post__comments-reply">ответить</button>
+              </li>
+            </ul>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</article>
+
+      </div>
+    </main>
+  </section>
+    
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

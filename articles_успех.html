@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <section class="page">
+    <header class="header">
+      <div class="header__nav">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link" href="index.html">ГЛАВНАЯ</a> </li>
+            <li class="menu__list-item menu__list-item--active"> <a class="menu__list-link menu__subnav" href="#">СТАТЬИ</a> 
+              <ul class="subnav">
+                <li class="subnav__item"><a class="subnav__link" href="articles_травмы.html">Кризисы и травмы</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_страхи.html">Страхи и тревоги</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_отношения.html">Гармоничные отношения</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_успех.html">Успех и самореализация</a></li>
+              </ul>
+            </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="about-me.html">ОБО МНЕ</a> </li>
+          </ul>
+        </nav>
+
+        <button class="burger burger__active" type="button">
+          <span class="burger__line"></span>
+        </button>
+
+      </div>
+      
+      <div class="header__search">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link" href="profile.html">ПРОФИЛЬ</a> </li>
+          </ul>
+        </nav>
+        <form class="header__form" action="search.html" method="post">
+          <input class="header__form-input" type="text" placeholder="Поиск по блогу">
+        </form>
+      </div>
+
+    </header>
+<!--Sidebar-->    
+    <aside class="sidebar show-sidebar">
+      <div class="sidebar__content">
+
+        <div class="sidebar__profile">
+          <img class="sidebar__profile-ava" src="images/avatar_sidebar.jpg" alt="avatar">
+         <div class="sidebar__descr">
+           <div class="sidebar__profile-name">Артём Папян</div>
+           <div class="sidebar__profile-job">психолог, коуч</div>
+         </div>
+        </div>
+
+        <div class="sidebar__socials">
+          <a class="sidebar__socials-link"  href="https://t.me/reach_your_goals" target="_blank">
+            <img class="sidebar__socials-icon" src="images/telegram.svg" alt="telegram icon">
+          </a>
+          <a class="sidebar__socials-link"  href="https://www.instagram.com/papyan.art/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+            <img class="sidebar__socials-icon" src="images/instagram.svg" alt="instagram icon">
+          </a>
+          <a class="sidebar__socials-link"  href="https://www.youtube.com/@user-gr4xr9mw5s" target="_blank">
+            <img class="sidebar__socials-icon" src="images/youtube.svg" alt="youtube icon">
+          </a>
+        </div>
+
+        <nav class="menu mobile-nav">
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link" href="index.html">ГЛАВНАЯ</a> </li>
+            <li class="menu__list-item menu__list-item--active"> <a class="menu__list-link menu__subnav" href="#">СТАТЬИ</a> 
+              <ul class="subnav">
+                <li class="subnav__item"><a class="subnav__link" href="articles_травмы.html">Кризисы и травмы</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_страхи.html">Страхи и тревоги</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_отношения.html">Гармоничные отношения</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="articles_успех.html">Успех и самореализация</a></li>
+              </ul>
+            </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="about-me.html">ОБО МНЕ</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="profile.html">ПРОФИЛЬ</a> </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar__footer">
+          <p class="sidebar__footer-text">Меня зовут Артём Папян. Я профессиональный психолог, коуч. Помогаю людям достичь гармонии и баланса во всех сферах жизни, учу правильно планировать, ставить цели, чтобы их достигать.</p>
+            <button class="sidebar__footer-btn" type="button">Написать мне</button>
+        </div>
+      </div>
+
+    </aside>
+
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close" type="button">
+          <svg class="modal__icon" width="17" height="17" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.1047 10.0008L19.7709 1.33447C20.0761 1.02935 20.0761 0.534663 19.7709 0.229585C19.4658 -0.0754924 18.9711 -0.0755315 18.6661 0.229585L9.99975 8.8959L1.33347 0.229585C1.02836 -0.0755315 0.533671 -0.0755315 0.228593 0.229585C-0.0764842 0.534702 -0.0765233 1.02939 0.228593 1.33447L8.89487 10.0007L0.228593 18.667C-0.0765233 18.9722 -0.0765233 19.4669 0.228593 19.7719C0.381132 19.9245 0.581093 20.0007 0.781053 20.0007C0.981014 20.0007 1.18094 19.9245 1.33351 19.7719L9.99975 11.1057L18.666 19.7719C18.8186 19.9245 19.0185 20.0007 19.2185 20.0007C19.4184 20.0007 19.6184 19.9245 19.7709 19.7719C20.0761 19.4668 20.0761 18.9721 19.7709 18.667L11.1047 10.0008Z" fill="white"/>
+          </svg>      
+        </button>
+        <form class="profile__form" action="/" method="post">
+    
+          <div class="profile__inf entrance__inf">
+    
+            <div class="form__group">
+              <input class="form__control" type="text" placeholder="Ваше имя" value="Игорь Иванов">
+            </div>
+    
+            <div class="form__group">
+              <input class="form__control" type="email" placeholder="Ваш e-mail">
+            </div>
+    
+            <div class="form__group">
+              <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст сообщения"></textarea>
+            </div>
+    
+          </div>
+    
+        <button class="form__btn entrance__btn" type="submit">Отправить</button>
+    
+      </form>
+      <div class="modal__footer">
+        <ul class="modal__list">
+          <li class="modal__item">e-mail:
+            <a class="modal__link" href="mailto:artiom.papean@mail.ru">artiom.papean@mail.ru</a>
+          </li>
+          <li class="modal__item">тел.:
+            <a class="modal__link" href="tel:+799955533321">+7(999)555-333-21</a>
+          </li>
+        </ul>
+      </div>
+    
+      </div>
+    </div>
+
+<!--Main-->    
+    <main class="main">
+      <div class="container">
+        <h1 class="title search__title">Статьи на тему: “Успех и самореализация”</h1>
+<!--Articles-->
+        <article class="articles">
+          <div class="articles__content">
+            <a class="articles__content-link" href="post_6.html">
+              <h2 class="articles__title">«БОЛЕЕ УМНЫЕ ЛЮДИ НЕДООЦЕНИВАЮТ СЕБЯ, А НЕВЕЖЕСТВЕННЫЕ СЧИТАЮТ СЕБЯ ВЫДАЮЩИМИСЯ»</h2>
+            </a>
+            <p class="text search__text">В первом случае, недооценка себя происходит из-за желания роста, развития и стремления к большему. Такой человек всегда оставляет долю сомнения в своих знаниях и компетентности. Он допускает вероятность того, что есть люди компетентнее его даже в том вопросе, в котором он разбирается блестяще.</p>
+          </div>
+          <div class="articles__footer">
+            <ul class="articles__data">
+              <li class="articles__data-item">
+                <time class="date articles__data-time" datetime="2022-11-06">06.11.2022</time>
+              </li>
+              <li class="articles__data-item">
+                <p class="articles__data-subtitle">успех и самореализация</p>
+              </li>
+            </ul>
+            <a class="link articles__footer-link" href="post_6.html">перейти</a>
+          </div>
+        </article>
+
+        <article class="articles">
+          <div class="articles__content">
+            <a class="articles__content-link" href="post_7.html">
+              <h2 class="articles__title">КАК ПРОЖИТЬ 10 ЖИЗНЕЙ ЗА 1.</h2>
+            </a>
+              <p class="text search__text">Многие люди, проживая свою жизнь, занимаются лишь одним делом, являясь специалистом только в одной области. Они, как правило, получают одно профильное образование и на протяжении всей жизни работают только по этой специальности, а иногда и в одной единственной компании. Некая такая "стабильность". Но не всегда этот выбор является осознанным и желанным.</p>
+          </div>
+          <div class="articles__footer">
+            <ul class="articles__data">
+              <li class="articles__data-item">
+                <time class="date articles__data-time" datetime="2022-10-20">20.10.2022</time>
+              </li>
+              <li class="articles__data-item">
+                <p class="articles__data-subtitle">успех и самореализация</p>
+              </li>
+            </ul>
+            <a class="link articles__footer-link" href="post_7.html">перейти</a>
+          </div>
+        </article>
+
+      </div>
+    </main>
+  </section>
+    
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
