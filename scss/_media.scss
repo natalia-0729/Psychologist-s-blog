@@ -1,0 +1,358 @@
+@media(min-width: 1640px){
+  .container{
+    max-width: 900px;
+  }
+  .stories{
+    grid-template-rows: 235px;
+  }
+  .date{
+    font-size: 14px;
+  }
+  .header{
+    &__form {
+      width: 300px;
+      margin-left: 60px;
+    }
+    &__form-input{
+      font-size: 14px;
+    }
+  }
+  .menu{
+    &__list-link{
+      font-size: 14px;
+    }
+  }
+}
+@media(min-width: 1920px){
+  body{
+    font-size: 20px;
+  }
+  .title{
+    font-size: 26px;
+  }
+  .main {
+    padding: 70px 0 70px 500px;
+  }
+  .container{
+    max-width: 1100px;
+  }
+  .header{
+    width: calc(100% - 500px);
+    &__form{
+      width: 300px;
+      margin-left: 60px;
+    }
+    &__form-input{
+      font-size: 15px;
+    }
+  }
+  .menu{
+    &__list-link{
+      font-size: 16px;
+    }
+  }
+  .subnav{
+    &__link{
+      font-size: 16px;
+    }
+  }
+  .stories{
+    grid-template-rows: 320px;
+    &__title, &__date{
+      font-size: 18px;
+    }
+  }
+  .articles{
+    margin-bottom: 50px;
+    &__data-link, &__data-search, &__data-subtitle{
+      font-size: 16px;
+    }
+    &__title, &__content-link{
+      font-size: 26px;
+    }
+    &__actions{
+      margin-bottom: 25px;
+    }
+  }
+  .sidebar{
+    width: 500px;
+    &__profile-ava{
+      width: 200px;
+      height: 200px;
+    }
+    &__profile-name {
+      font-size: 30px;
+      margin: 30px 0 20px;
+    }
+    &__footer-text {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .text{
+    line-height: 28px;
+  }
+  .note{
+    margin-bottom: 50px;
+    padding: 25px 20px;
+    &__form-textarea{
+      font-size: 18px;
+    }
+  }
+  .date{
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 2500px){
+  .container{
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 991px){
+ .header{
+    width: 100%;
+  }
+  .menu{
+    display: none;
+    &__list{
+      flex-direction: column;
+      margin-left: 20px;
+    }
+    &__list-item {
+      margin-left: 0;
+    }
+    &__list-link{
+      font-size: 13px;
+    }
+  }
+  .burger{
+    display: block;
+  }
+  .mobile-nav{
+    display: block;
+  }
+  
+  .subnav{
+    position: static;
+    width: 100%;
+    padding-left: 20px;
+
+    &__link{
+      font-size: 13px;
+    }
+  }
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+    top: 40px;
+    padding-bottom: 20px;
+    z-index: 10;
+    overflow: auto;
+
+    transform: translateX(-200%);
+    transition: transform .5s linear;
+
+    &__content{
+      flex-grow: 1;
+    }
+    &__profile{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 20px;
+    }
+    &__profile-ava{
+      width: 65px;
+      height: 65px;
+      margin: 0 10px 0 0;
+    }
+    &__descr{
+      text-align: left;
+    }
+    &__profile-name{
+      font-size: 15px;
+      line-height: 18px;
+      margin: 5px 0;
+    }
+    &__profile-job{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__socials{
+      justify-content: flex-start;
+      margin: 20px 0 20px 40px;
+    }
+   
+    &__socials-link + .sidebar__socials-link {
+      margin-left: 30px;
+    }
+    &__footer-text{
+      display: none;
+    }
+  }
+  .sidebar.sidebar--active{
+    transform: translateX(0%);
+  }
+
+  .main{
+    padding-left: 0;
+    position: relative;
+ /*   &::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(24,24,24,.8);
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
+  }*/
+  }
+  .articles{
+    &__title, &__content-link {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+  }
+  .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .profile{
+    &__inf{
+      width: 300px;
+    }
+    &__avatar{
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .container{
+    padding: 0 15px;
+  }
+  .main{
+    padding-bottom: 30px;
+  }
+  .stories{
+    grid-template-columns: 130px 130px 130px 130px;
+    overflow: auto;
+  }
+  .articles{
+    padding: 15px;
+    &__header--img{
+      margin: -15px -15px 15px;
+    }
+    &__title, &__content-link {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+    &__footer{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__footer-link{
+      margin-top: 10px;
+    }
+    h5{
+      font-size: 12px;
+      line-height: 19px;
+    }
+  }
+  .text {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .note{
+   &__form-label, &__form-btn {
+      width: 37px;
+      height: 37px;
+    }
+    &__form-textarea{
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  .pagination{
+    &__link{
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+    }
+  }
+  .post{
+    &__related{
+      padding: 10px 0 5px;
+    }
+    &__related-title, &__comments-title {
+      font-size: 14px;
+      line-height: 10px;
+      margin-bottom: 15px;
+    }
+    &__related-list{
+      display: block;
+    }
+    &__related-list-item{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &__related-list-title, &__related-list-link{
+      font-size: 12px;
+    }
+  }
+  .form{
+   &__control--textarea {
+      height: 25px;
+      font-size: 12px;
+    }
+    &__control{
+      font-size: 12px;
+    }
+    &__btn{
+      padding: 8px 8px;
+      font-size: 11px;
+    }
+  }
+  .link{
+    font-size: 12px;
+  }
+  .title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .profile{
+    &__title {
+      margin-top: 0;
+    }
+    &__inf {
+      width: 200px;
+    }
+    &__avatar{
+      padding-left: 20px;
+    }
+    &__avatar-file{
+      font-size: 12px;
+    }
+    &__avatar-img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .modal{
+    &__item{
+      display: grid;
+    }
+    &__content{
+      padding: 40px;
+    }
+  }
+}
